@@ -28,9 +28,13 @@
     items: 4,
     lazyLoad: true,
     loop: true,
-    dots: true,
+    dots: false,
     margin: 30,
+    autoplay:true,
+    autoplayTimeout:3500,
+    lazyLoad: true,
     responsiveClass: true,
+    autoHeight:true,
     responsive: {
       0: {
         items: 1
@@ -67,10 +71,5 @@
 
     $(this).on("change", filter);
     filter();
-  });
-
-  lightbox.option({
-    resizeDuration: 200,
-    wrapAround: true
   });
 })(jQuery);
