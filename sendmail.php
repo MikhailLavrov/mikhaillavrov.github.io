@@ -15,9 +15,9 @@
 	// Кому отправить
 	$mail->addAddress('lavrov.fd@gmail.com');
 	// Тема письма
-	$mail->Subject - 'Тема, это тема письма';
+	$mail->Subject = 'Тема, это тема письма';
 
-	$body = 'ТЕЛО письма';
+	$body = '<h1>ТЕЛО письма</h1>';
 
 	if(trim(!empty($_POST['name']))){
 		$body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
