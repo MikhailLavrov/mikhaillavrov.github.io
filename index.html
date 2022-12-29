@@ -484,7 +484,7 @@
           <div class="row">
             <div class="right-content">
               <div class="container">
-                <form id="contact" action="" method="post">
+                <form class="form-body" id="contact">
                   <div class="row">
                     <div class="col-md-6">
                       <fieldset>
@@ -493,7 +493,7 @@
                           type="text"
                           class="form-control"
                           id="name"
-                          placeholder="Your name..."
+                          placeholder="Ваше имя..."
                           required=""
                         />
                       </fieldset>
@@ -505,7 +505,7 @@
                           type="text"
                           class="form-control"
                           id="email"
-                          placeholder="Your email..."
+                          placeholder="Ваш email..."
                           required=""
                         />
                       </fieldset>
@@ -517,8 +517,7 @@
                           type="text"
                           class="form-control"
                           id="subject"
-                          placeholder="Subject..."
-                          required=""
+                          placeholder="Тема..."
                         />
                       </fieldset>
                     </div>
@@ -529,15 +528,15 @@
                           rows="6"
                           class="form-control"
                           id="message"
-                          placeholder="Your message..."
+                          placeholder="Текст сообщения..."
                           required=""
                         ></textarea>
                       </fieldset>
                     </div>
                     <div class="col-md-12">
                       <fieldset>
-                        <button type="submit" id="form-submit" class="button">
-                          Send Message
+                        <button type="submit" class="button" form="contact">
+                          Отправить
                         </button>
                       </fieldset>
                     </div>
@@ -557,6 +556,7 @@
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/form.js"></script>
     <script>
       //according to loftblog tut
       $(".main-menu li:first").addClass("active");
