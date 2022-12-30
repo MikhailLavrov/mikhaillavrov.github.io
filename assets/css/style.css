@@ -438,6 +438,10 @@ button:hover {
     transition: all 0.5s;
 }
 
+.scroll-lock {
+    overflow: hidden;
+}
+
 /* My Work */
 
 section.my-work .section-heading {

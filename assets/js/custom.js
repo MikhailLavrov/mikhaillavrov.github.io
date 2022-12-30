@@ -2,17 +2,21 @@
   var toggle = document.getElementById("menu-toggle");
   var menu = document.getElementById("menu");
   var close = document.getElementById("menu-close");
+  var body = document.querySelector("body");
 
   toggle.addEventListener("click", function(e) {
     if (menu.classList.contains("open")) {
       menu.classList.remove("open");
+      body.classList.remove("scroll-lock");
     } else {
       menu.classList.add("open");
+      body.classList.add("scroll-lock");
     }
   });
 
   close.addEventListener("click", function(e) {
     menu.classList.remove("open");
+    body.classList.remove("scroll-lock");
   });
 
   // Close menu after click on smaller screens
