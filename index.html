@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Frontend портфолио">
     <title>Лавров Михаил - Портфолио</title>
     <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
     <link rel="icon" href="/assets/images/favicon.png" type="image/png">
     <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/assets/images/favicon-apple.png">  <!-- 180×180 -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
   <body>
     <div id="page-wraper">
+      <h1 class="visually-hidden">Портфолио: Frontend-разработчик</h1>
       <!-- Sidebar Menu -->
       <div class="responsive-nav">
         <i class="fa fa-bars" id="menu-toggle"></i>
@@ -21,54 +22,54 @@
           <i class="fa fa-times" id="menu-close"></i>
           <div class="container">
             <div class="image">
-              <img width="309" height="320" src="assets/images/author-image.jpg" alt="Author photo" />
+              <img width="309" height="320" src="assets/images/author-image.jpg" alt="Author photo">
             </div>
             <div class="author-content">
-              <h4>Михаил Лавров</h4>
+              <h2>Михаил Лавров</h2>
               <span>34 года, Фронтенд разработчик</span>
             </div>
-            <nav class="main-nav" role="navigation">
+            <nav class="main-nav">
+              <h3 class="visually-hidden">Навигация по сайту</h3>
               <ul class="main-menu">
-                <li><a href="#section1">Обо мне</a></li>
-                <li><a href="#section2">Навыки</a></li>
-                <li><a href="#section3">Портфолио</a></li>
-                <li><a href="#section4">Связаться</a></li>
+                <li><a href="#section1" aria-label="about me">Обо мне</a></li>
+                <li><a href="#section2" aria-label="my skills">Навыки</a></li>
+                <li><a href="#section3" aria-label="my work">Портфолио</a></li>
               </ul>
             </nav>
             <div class="social-network">
               <ul class="social-icons">
                 <li>
-                  <a href="https://t.me/misha_too" target="_blank">
+                  <a href="https://t.me/misha_too" target="_blank" aria-label="my telegram link">
                     <i class="fa fa-paper-plane" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/lavrov-fd/" target="_blank">
+                  <a href="https://www.linkedin.com/in/lavrov-fd/" target="_blank" aria-label="my linkedin link">
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/MikhailLavrov" target="_blank">
+                  <a href="https://github.com/MikhailLavrov" target="_blank" aria-label="my github link">
                     <i class="fa fa-github" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:lavrov-fd@gmail.com">
+                  <a href="mailto:lavrov-fd@gmail.com" aria-label="my mail link">
                     <strong>G</strong>
                   </a>
                 </li>
                 <li>
-                  <a href="https://hh.ru/applicant/resumes/view?resume=b28e0692ff0b6e362e0039ed1f307244617479" target="_blank">
+                  <a href="https://hh.ru/applicant/resumes/view?resume=b28e0692ff0b6e362e0039ed1f307244617479" target="_blank" aria-label="my headhunter link">
                     <span>hh</span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://career.habr.com/lavrov-m88" target="_blank">
+                  <a href="https://career.habr.com/lavrov-m88" target="_blank" aria-label="my habr link">
                     <span>Habr</span>
                   </a>
                 </li>
                 <li>
-                  <a class="w-100" href="https://drive.google.com/file/d/1tCkgfArHdeanyktHjOW5Bghr0r8oO_9I/view?usp=share_link" target="_blank">
+                  <a class="w-100" href="https://drive.google.com/file/d/1tCkgfArHdeanyktHjOW5Bghr0r8oO_9I/view?usp=share_link" target="_blank" aria-label="my CV download link">
                     <i class="fa fa-download mr-2" aria-hidden="true"></i>
                     <span>Скачать CV</span>
                   </a>
@@ -79,11 +80,11 @@
         </div>
       </div>
       <!-- Modal -->
-      <div class="modal fade" id="certificates" tabindex="-1" role="dialog" aria-labelledby="certificates" aria-hidden="true">
+      <div class="modal fade" id="certificates" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="certificates">Сертификаты</h5>
+              <h3 class="modal-title h5">Сертификаты</h3>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -144,16 +145,16 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="left-image">
-                  <img src="assets/images/about-laptop.jpg" alt="Decorative image" />
+                  <img src="assets/images/about-laptop.jpg" alt="Decorative image">
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="right-text">
-                  <h4>Профессиональная подготовка</h4>
+                <div>
+                  <h3>Профессиональная подготовка</h3>
                   <p>Помимо самостоятельного обучения, я регулярно прохожу профессиональные обучающие курсы по фронтенду.</p>
                   <p>Посещаю митапы и конференции, изучаю документацию и слежу за новыми тенденциями в мире фронтенда.</p>
                   <div class="white-button">
-                    <a href="#" data-toggle="modal" data-target="#certificates">Сертификаты</a>
+                    <a href="#" data-toggle="modal" data-target="#certificates" aria-label="looak at my certificates">Сертификаты</a>
                   </div>
                 </div>
               </div>
@@ -171,6 +172,7 @@
               Понимаю, что абсолютно всё и сразу знать невозможно, поэтому каждый день занимаюсь развитием своих профессиональных навыков. Изучаю новые инструменты, фреймворки, читаю документации и применяю это на практике!
             </span>
           </div>
+          <h3 class="visually-hidden">Мой стек</h3>
           <div class="row text-center">
             <div class="col-md-3">
               <div class="service-item">
@@ -264,7 +266,7 @@
                     data-type="*"
                     checked=""
                     name="isotope-filter"
-                  />
+                    >
                   <span>Все</span></label
                 >
                 <label
@@ -272,7 +274,7 @@
                     type="radio"
                     data-type="htmlcss"
                     name="isotope-filter"
-                  />
+                    >
                   <span>HTML/CSS</span></label
                 >
                 <label
@@ -280,7 +282,7 @@
                     type="radio"
                     data-type="javascript"
                     name="isotope-filter"
-                  />
+                    >
                   <span>JavaScript</span></label
                 >
                 <label
@@ -288,21 +290,22 @@
                     type="radio"
                     data-type="react"
                     name="isotope-filter"
-                  />
+                    >
                   <span>React</span></label
                 >
               </form>
               <div class="isotope-box">
+                <h3 class="visually-hidden">Мои работы</h3>
 
                 <div class="isotope-item" data-type="htmlcss">
                   <figure class="snip1321">
-                    <img src="assets/images/portfolio/supergym.jpg" alt="SuperGym project thumbnail." />
+                    <img src="assets/images/portfolio/supergym.jpg" alt="SuperGym project thumbnail.">
                     <figcaption>
                       <p>
-                        <a href="https://mikhaillavrov.github.io/fitness/build/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://mikhaillavrov.github.io/fitness/build/" target="_blank" rel="noopener noreferrer" aria-label="my fitness project link">
                           <i class="fa fa-link"></i>
                         </a>
-                        <a href="https://github.com/MikhailLavrov/fitness" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/MikhailLavrov/fitness" target="_blank" rel="noopener noreferrer" aria-label="my fitness project link on github">
                           <i class="fa fa-github"></i>
                         </a>
                       </p>
@@ -314,13 +317,13 @@
 
                 <div class="isotope-item" data-type="javascript">
                   <figure class="snip1321">
-                    <img src="assets/images/portfolio/keksobooking.jpg" alt="Keksobooking project thumbnail." />
+                    <img src="assets/images/portfolio/keksobooking.jpg" alt="Keksobooking project thumbnail.">
                     <figcaption>
                       <p>
-                        <a href="https://mikhaillavrov.github.io/keksobooking/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://mikhaillavrov.github.io/keksobooking/" target="_blank" rel="noopener noreferrer" aria-label="my keksobooking project link">
                           <i class="fa fa-link"></i>
                         </a>
-                        <a href="https://github.com/MikhailLavrov/keksobooking" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/MikhailLavrov/keksobooking" target="_blank" rel="noopener noreferrer" aria-label="my keksobooking project link on github">
                           <i class="fa fa-github"></i>
                         </a>
                       </p>
@@ -332,13 +335,13 @@
 
                 <div class="isotope-item" data-type="javascript">
                   <figure class="snip1321">
-                    <img src="assets/images/portfolio/antarctica.jpg" alt="Antarctica project thumbnail." />
+                    <img src="assets/images/portfolio/antarctica.jpg" alt="Antarctica project thumbnail.">
                     <figcaption>
                       <p>
-                        <a href="https://mikhaillavrov.github.io/antarctica/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://mikhaillavrov.github.io/antarctica/" target="_blank" rel="noopener noreferrer" aria-label="my antarctica project link">
                           <i class="fa fa-link"></i>
                         </a>
-                        <a href="https://github.com/MikhailLavrov/antarctica" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/MikhailLavrov/antarctica" target="_blank" rel="noopener noreferrer" aria-label="my antarctica project link on github">
                           <i class="fa fa-github"></i>
                         </a>
                       </p>
@@ -350,10 +353,10 @@
 
                 <div class="isotope-item" data-type="react">
                   <figure class="snip1321">
-                    <img src="assets/images/portfolio/farm.jpg" alt="Farm react project thumbnail." />
+                    <img src="assets/images/portfolio/farm.jpg" alt="Farm react project thumbnail.">
                     <figcaption>
                       <p>
-                        <a href="https://github.com/MikhailLavrov/farm_prod" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/MikhailLavrov/farm_prod" target="_blank" rel="noopener noreferrer" aria-label="my farm_prod project link">
                           <i class="fa fa-github"></i>
                         </a>
                       </p>
@@ -365,13 +368,13 @@
 
                 <div class="isotope-item" data-type="javascript">
                   <figure class="snip1321">
-                    <img src="assets/images/portfolio/todo.jpg" alt="Todo app project thumbnail." />
+                    <img src="assets/images/portfolio/todo.jpg" alt="Todo app project thumbnail.">
                     <figcaption>
                       <p>
-                        <a href="https://mikhaillavrov.github.io/todo-js/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://mikhaillavrov.github.io/todo-js/" target="_blank" rel="noopener noreferrer" aria-label="my todo project link">
                           <i class="fa fa-link"></i>
                         </a>
-                        <a href="https://github.com/MikhailLavrov/todo-js" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/MikhailLavrov/todo-js" target="_blank" rel="noopener noreferrer" aria-label="my todo project link on github">
                           <i class="fa fa-github"></i>
                         </a>
                       </p>
@@ -383,13 +386,13 @@
 
                 <div class="isotope-item" data-type="htmlcss">
                   <figure class="snip1321">
-                    <img src="assets/images/portfolio/zaryad.jpg" alt="Zaryad project thumbnail." />
+                    <img src="assets/images/portfolio/zaryad.jpg" alt="Zaryad project thumbnail.">
                     <figcaption>
                       <p>
-                        <a href="https://mikhaillavrov.github.io/imperium-test/build/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://mikhaillavrov.github.io/imperium-test/build/" target="_blank" rel="noopener noreferrer" aria-label="my imperium project link">
                           <i class="fa fa-link"></i>
                         </a>
-                        <a href="https://github.com/MikhailLavrov/imperium-test" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/MikhailLavrov/imperium-test" target="_blank" rel="noopener noreferrer" aria-label="my imperium project link on github">
                           <i class="fa fa-github"></i>
                         </a>
                       </p>
@@ -401,13 +404,13 @@
 
                 <div class="isotope-item" data-type="htmlcss">
                   <figure class="snip1321">
-                    <img src="assets/images/portfolio/drink2go.jpg" alt="Drink2Go project thumbnail." />
+                    <img src="assets/images/portfolio/drink2go.jpg" alt="Drink2Go project thumbnail.">
                     <figcaption>
                       <p>
-                        <a href="https://mikhaillavrov.github.io/drink2go/source/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://mikhaillavrov.github.io/drink2go/source/" target="_blank" rel="noopener noreferrer" aria-label="my drink2go project link">
                           <i class="fa fa-link"></i>
                         </a>
-                        <a href="https://github.com/MikhailLavrov/drink2go" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/MikhailLavrov/drink2go" target="_blank" rel="noopener noreferrer" aria-label="my drink2go project link on github">
                           <i class="fa fa-github"></i>
                         </a>
                       </p>
@@ -419,13 +422,13 @@
 
                 <div class="isotope-item" data-type="htmlcss">
                   <figure class="snip1321">
-                    <img src="assets/images/portfolio/smart-device.jpg" alt="Smart-device project thumbnail." />
+                    <img src="assets/images/portfolio/smart-device.jpg" alt="Smart-device project thumbnail.">
                     <figcaption>
                       <p>
-                        <a href="https://mikhaillavrov.github.io/smart-device/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://mikhaillavrov.github.io/smart-device/" target="_blank" rel="noopener noreferrer" aria-label="my smart-device project link">
                           <i class="fa fa-link"></i>
                         </a>
-                        <a href="https://github.com/MikhailLavrov/smart-device" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/MikhailLavrov/smart-device" target="_blank" rel="noopener noreferrer" aria-label="my smart-device project link on github">
                           <i class="fa fa-github"></i>
                         </a>
                       </p>
@@ -437,10 +440,10 @@
 
                 <div class="isotope-item" data-type="htmlcss">
                   <figure class="snip1321">
-                    <img src="assets/images/portfolio/cat-energy.jpg" alt="Cat-energy project thumbnail." />
+                    <img src="assets/images/portfolio/cat-energy.jpg" alt="Cat-energy project thumbnail.">
                     <figcaption>
                       <p>
-                        <a href="https://github.com/MikhailLavrov/cat-energy" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/MikhailLavrov/cat-energy" target="_blank" rel="noopener noreferrer" aria-label="my cat-energy project link">
                           <i class="fa fa-github"></i>
                         </a>
                       </p>
@@ -452,13 +455,13 @@
 
                 <div class="isotope-item" data-type="htmlcss">
                   <figure class="snip1321">
-                    <img src="assets/images/portfolio/sedona.jpg" alt="Sedona project thumbnail." />
+                    <img src="assets/images/portfolio/sedona.jpg" alt="Sedona project thumbnail.">
                     <figcaption>
                       <p>
-                        <a href="https://mikhaillavrov.github.io/sedona/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://mikhaillavrov.github.io/sedona/" target="_blank" rel="noopener noreferrer" aria-label="my sedona project link">
                           <i class="fa fa-link"></i>
                         </a>
-                        <a href="https://github.com/MikhailLavrov/sedona" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/MikhailLavrov/sedona" target="_blank" rel="noopener noreferrer" aria-label="my sedona project link on github">
                           <i class="fa fa-github"></i>
                         </a>
                       </p>
@@ -473,80 +476,6 @@
           </div>
         </div>
       </section>
-      <!-- Contacts -->
-      <section class="section contact-me" data-section="section4">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Отправьте ваше предложение</h2>
-            <div class="line-dec"></div>
-            <span>С большим удовольствием рассмотрю ваше предложение о взаимовыгодном сотрудничестве!</span>
-          </div>
-          <div class="row">
-            <div class="right-content">
-              <div class="container">
-                <form class="form-body" id="contact" action="#">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          placeholder="Ваше имя..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-6">
-                      <fieldset>
-                        <input
-                          name="email"
-                          type="text"
-                          class="form-control"
-                          id="email"
-                          placeholder="Ваш email..."
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input
-                          name="subject"
-                          type="text"
-                          class="form-control"
-                          id="subject"
-                          placeholder="Тема..."
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea
-                          name="message"
-                          rows="6"
-                          class="form-control"
-                          id="message"
-                          placeholder="Текст сообщения..."
-                          required=""
-                        ></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" class="button">
-                          Отправить
-                        </button>
-                      </fieldset>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
 
     <!-- Scripts -->
@@ -556,56 +485,6 @@
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script src="assets/js/form.js"></script>
-    <script>
-      //according to loftblog tut
-      $(".main-menu li:first").addClass("active");
-
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
-
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
-
-      var checkSection = function checkSection() {
-        $(".section").each(function() {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-          }
-        });
-      };
-
-      $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
-      });
-
-      $(window).scroll(function() {
-        checkSection();
-      });
-    </script>
+    <script src="assets/js/menu-navigation.js"></script>
   </body>
 </html>

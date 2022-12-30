@@ -74,6 +74,23 @@ ul li {
     display: inline-block;
 }
 
+.visually-hidden {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+  
+    white-space: nowrap;
+  
+    border: 0;
+  
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+}
+
 .clearfix {
     zoom: 1;
 }
@@ -140,8 +157,12 @@ ul li {
     margin: 40px 0px 60px 0px;
 }
 
-.menu .author-content h4 {
+.menu .author-content h2 {
     margin-bottom: 0px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.25px;
 }
 
 .menu .author-content span {
@@ -352,8 +373,14 @@ button:hover {
 }
 
 .right-image-post h4,
-.left-image-post h4 {
+.left-image-post h4,
+.left-image-post h3,
+.left-image-post h3 {
     margin-top: 30px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.25px;
 }
 
 .right-image-post p,
