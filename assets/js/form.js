@@ -7,11 +7,14 @@ document.addEventListener('DOMContentLoaded', function () {
     e.preventDefault();
 
     let formData = new FormData(form);
+    
     form.classList.add('form-sending');
+
     let response = await fetch('sendmail.php', {
       method: 'POST',
       body: formData,
     });
+
     if (response.ok) {
       let result = await response.json();
       alert(result.message);

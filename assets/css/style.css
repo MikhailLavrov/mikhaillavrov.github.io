@@ -217,6 +217,7 @@ ul li {
   width: 20%;
   will-change: transform;
   z-index: 9999 !important;
+  padding-bottom: 20px;
 }
 
 .menu-toggle {
@@ -485,7 +486,7 @@ section.my-work .section-heading {
 }
 
 figure.snip1321 {
-  overflow: hidden;
+  /* overflow: hidden; */
   text-align: center;
   -webkit-perspective: 50em;
   perspective: 50em;
@@ -502,11 +503,24 @@ figure.snip1321 figcaption {
   right: 20px;
   position: absolute;
   opacity: 0;
-  z-index: 1;
+  z-index: 1;    
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 10px;
+  background-color: #ffffffed;
+  border-radius: 10px;
+  height: auto;
+  justify-content: center;
+  min-height: 90%;
+  
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 figure.snip1321 h4 {
-    margin-top: 15px;
-  margin-bottom: 5px;
   color: #232323;
 }
 figure.snip1321 span {
@@ -527,24 +541,6 @@ figure.snip1321 i {
   border-radius: 5px;
   color: #fff;
 }
-figure.snip1321:after {
-  background-color: #ffffff;
-  position: absolute;
-  content: "";
-  display: block;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  -webkit-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  opacity: 0;
-}
 figure.snip1321 a {
   left: 0;
   right: 0;
@@ -559,12 +555,6 @@ figure.snip1321.hover figcaption {
   opacity: 1;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
-}
-figure.snip1321:hover:after,
-figure.snip1321.hover:after {
-  -webkit-transform: rotateX(0);
-  transform: rotateX(0);
-  opacity: 0.9;
 }
 
 /* Contact Me */
