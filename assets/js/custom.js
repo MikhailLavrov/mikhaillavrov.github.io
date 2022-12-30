@@ -23,6 +23,7 @@
   $(window).on("resize", function() {
     if ($(window).width() < 846) {
       $(".main-menu a").on("click", function() {
+        body.classList.remove("scroll-lock");
         menu.classList.remove("open");
       });
     }
