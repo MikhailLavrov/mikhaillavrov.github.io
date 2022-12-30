@@ -819,3 +819,16 @@ section.contact-me {
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .skills {
+        grid-template-columns: repeat(2, auto);
+    }
+}
