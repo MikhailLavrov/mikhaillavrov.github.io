@@ -35,7 +35,7 @@
     loop: true,
     dots: false,
     margin: 30,
-    autoplay:true,
+    // autoplay:true,
     autoplayTimeout:3500,
     lazyLoad: true,
     responsiveClass: true,

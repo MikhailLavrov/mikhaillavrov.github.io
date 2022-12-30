@@ -116,8 +116,8 @@ ul li {
 .modal-close-button {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.527);
-    top: 1rem;
-    right: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
     width: 40px;
     height: 40px;
     z-index: 22;
@@ -127,6 +127,26 @@ ul li {
     align-items: center;
     font-size: 2rem;
     font-weight: 400;
+}
+
+.modal-body {
+    padding: 0.5rem;
+}
+
+.owl-carousel__content {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: rgba(255, 255, 255, 0.66);
+    text-align: center;
+}
+
+.owl-carousel__content p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.owl-carousel__content p:not(:last-child) {
+    margin-bottom: 5px;
 }
 
 .main-nav li:last-child a {
