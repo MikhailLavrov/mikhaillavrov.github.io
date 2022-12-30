@@ -113,6 +113,22 @@ ul li {
     text-align: center;
 }
 
+.modal-close-button {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.527);
+    top: 1rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    z-index: 22;
+    color: rgba(255, 255, 255, 0.66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
 .main-nav li:last-child a {
     border-bottom: 2px solid #fff;
 }
@@ -222,6 +238,7 @@ ul li {
 .menu {
   left: 10%;
   -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+  transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
   -webkit-overflow-scrolling: touch;
   background-color: #666666;
   box-sizing: border-box;
