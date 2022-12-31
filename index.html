@@ -16,7 +16,7 @@
     <div id="page-wraper">
       <h1 class="visually-hidden">Портфолио: Frontend-разработчик</h1>
       <!-- Sidebar Menu -->
-      <div class="responsive-nav">
+      <div class="navigation">
         <i class="fa fa-bars" id="menu-toggle"></i>
         <div id="menu" class="menu">
           <i class="fa fa-times" id="menu-close"></i>
@@ -69,7 +69,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="w-100" href="https://drive.google.com/file/d/1tCkgfArHdeanyktHjOW5Bghr0r8oO_9I/view?usp=share_link" target="_blank" aria-label="my CV download link">
+                  <a class="w-100" href="./docs/lavrov-frontend-cv-rus.pdf" download aria-label="my CV download link" id="download-link">
                     <i class="fa fa-download mr-2" aria-hidden="true"></i>
                     <span>Скачать CV</span>
                   </a>
@@ -119,6 +119,13 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="download-agreement" id="agreement">
+        <h3>Скачать файл PDF?</h3>
+        <div>
+          <button type="button" id="agreement-apply">Да</button>
+          <button type="button" id="agreement-reject">Нет</button>
         </div>
       </div>
       <!-- About me -->
@@ -475,6 +482,7 @@
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.min.js"></script>
     <!-- Custom -->
+    <script src="assets/js/main.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/menu-navigation.js"></script>
   </body>

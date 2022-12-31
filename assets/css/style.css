@@ -720,6 +720,21 @@ section.contact-me {
     visibility: visible;
 }
 
+.download-agreement {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.571);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+}
+
 @media screen and (max-width: 1680px) {
     .menu {
         left: 5%;
@@ -836,7 +851,7 @@ section.contact-me {
                 transform: translateX(0) !important;
     }
 
-    .responsive-nav {
+    .navigation {
         display: inline-block;
     }
     .section {
