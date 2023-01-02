@@ -480,7 +480,57 @@ button:hover {
 }
 
 .scroll-lock {
+    position: relative;
     overflow: hidden;
+}
+
+.scroll-lock::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.owl-prev span {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, transparent 100%);
+}
+
+.owl-next span {
+    background: linear-gradient(90deg, transparent 0%, rgba(0, 0, 0, 0.25) 100%);
+}
+
+.owl-nav button {
+    width: 10%;
+    pointer-events: all;
+}
+
+.owl-nav button:focus {
+    outline: none;
+}
+
+.owl-nav span {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
 }
 
 /* My Work */

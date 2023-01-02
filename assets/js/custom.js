@@ -3,8 +3,8 @@
   var menu = document.getElementById("menu");
   var close = document.getElementById("menu-close");
   var body = document.querySelector("body");
-
-  toggle.addEventListener("click", function(e) {
+  
+  toggle.addEventListener("click", function() {
     if (menu.classList.contains("open")) {
       menu.classList.remove("open");
       body.classList.remove("scroll-lock");
@@ -12,12 +12,26 @@
       menu.classList.add("open");
       body.classList.add("scroll-lock");
     }
+    
   });
-
+  
   close.addEventListener("click", function(e) {
     menu.classList.remove("open");
     body.classList.remove("scroll-lock");
   });
+  
+  const outerClose = (evt) => {
+    var scrollLockEl = document.querySelector('.scroll-lock');
+
+    if (menu.classList.contains("open")) {
+      if (evt.target === scrollLockEl) {
+        menu.classList.remove("open");
+        body.classList.remove("scroll-lock");
+      };
+    };
+  };
+
+  document.addEventListener('click', outerClose);
 
   // Close menu after click on smaller screens
   $(window).on("resize", function() {
@@ -35,7 +49,8 @@
     loop: true,
     dots: false,
     margin: 30,
-    autoplay:true,
+    nav: true,
+    // autoplay:true,
     autoplayTimeout:4000,
     lazyLoad: true,
     responsiveClass: true,
