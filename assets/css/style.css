@@ -332,7 +332,7 @@ ul li {
     right: 10%;
     left: 35%;
     position: relative;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding-bottom: 80px;
     border-bottom: 3px solid rgba(250, 250, 250, 0.25);
 }
@@ -445,6 +445,7 @@ button:hover {
     padding: 20px;
     background-color: rgba(250, 250, 250, 0.1);
     transition: all 0.5s;
+    user-select: none;
 }
 
 .service-item img {
@@ -495,6 +496,10 @@ section.my-work .section-heading {
     margin: auto;
 }
 
+.isotope-toolbar {
+    user-select: none;
+}
+
 .isotope-toolbar input[type="radio"] {
     display: none;
 }
@@ -509,6 +514,7 @@ section.my-work .section-heading {
     border-bottom: 2px solid transparent;
     transform: ease-in-out 0.5s;
     cursor: pointer;
+    user-select: none;
 }
 
 .isotope-toolbar input[type="radio"]:checked + span {
@@ -787,12 +793,49 @@ section.contact-me {
 #menu-toggle,
 #menu-close {
     display: none;
-}  
+}
+
+.my-work {
+    padding-bottom: 40px;
+}
+
+.additional {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.additional p {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+    pointer-events: none;
+    user-select: none;
+}
+
+a {
+    user-select: none;
+}
+
+.additional.section {
+    padding: 20px 0;
+    right: 0;
+    width: 75%;
+    left: 25%;
+}
+
+.additional.container {
+    width: 100%;
+}
 
 @media screen and (max-width: 845px) {  
     .social-icons {
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
+    }
+
+    .additional.section {
+        width: 100%;
+        left: 0;
+        right: 0;
     }
 
     .left-image-post .row {
