@@ -868,15 +868,25 @@ section.contact-me {
         display: grid;
         grid-template-columns: repeat(3, auto);
     }
+    
+    .section-heading {
+        padding: 40px 0;
+        text-align: justify;
+    }
+
+    .section-heading h2 {
+        text-align: center;
+    }
+    
+    section.my-work .section-heading {
+        text-align: justify;
+        padding: 40px 0;
+    }
 }
 
 @media screen and (max-width: 450px) {
     .skills {
         grid-template-columns: repeat(2, auto);
-    }
-    
-    .section-heading {
-        padding: 40px 10px;
     }
 
     .section {
