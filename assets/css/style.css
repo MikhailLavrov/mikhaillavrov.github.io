@@ -874,4 +874,17 @@ section.contact-me {
     .skills {
         grid-template-columns: repeat(2, auto);
     }
+    
+    .section-heading {
+        padding: 40px 10px;
+    }
+
+    .section {
+        padding-bottom: 40px;
+    }
+
+    .white-button a {
+        width: 100%;
+        text-align: center;
+    }
 }
