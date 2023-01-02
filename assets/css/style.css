@@ -114,6 +114,10 @@ ul li {
     text-align: center;
 }
 
+.my-work {
+    min-height: 100vh;
+}
+
 .modal-close-button {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.527);
