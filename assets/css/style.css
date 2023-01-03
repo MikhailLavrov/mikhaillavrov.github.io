@@ -143,13 +143,11 @@ ul li {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 20px;
 }
 
 .translation ul,
 .translation li {
     display: flex;
-    gap: 5px;
     align-items: center;
     justify-content: center;
     color: #ffffff80;
@@ -159,6 +157,8 @@ ul li {
     color: #ffffff80;
     text-transform: uppercase;
     font-size: 0.8rem;
+    padding: 20px;
+    z-index: 999;
 }
 
 .translation a.active {

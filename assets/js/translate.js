@@ -4,8 +4,6 @@ window.addEventListener('DOMContentLoaded', () => {
   const enToggle = translation.querySelector('#enTranslate');
 
   translation.addEventListener('click', (evt) => {
-    // evt.preventDefault();
-
     evt.target === enToggle ? toggleToEn() : null;
     evt.target === ruToggle ? toggleToRu() : null;
   });
