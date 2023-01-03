@@ -272,8 +272,8 @@ ul li {
   -webkit-overflow-scrolling: touch;
   background-color: #666666;
   box-sizing: border-box;
-  height: 100vh;  
-  max-height: 100vh !important;
+  height: 100%;  
+  min-height: 100vh !important;
   max-width: 80vw !important;
   min-width: 45px !important;
   outline: none;
