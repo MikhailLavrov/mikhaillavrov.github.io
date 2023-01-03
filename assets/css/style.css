@@ -139,6 +139,40 @@ ul li {
     padding: 0.5rem;
 }
 
+.translation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.translation ul,
+.translation li {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff80;
+}
+
+.translation a {
+    color: #ffffff80;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.translation a.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #ffffff;
+    cursor: default;
+    pointer-events: none;
+}
+
+.translation a:hover {
+    color: #ffffff;
+}
+
 .owl-carousel__content {
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.527);
@@ -257,10 +291,6 @@ ul li {
     color: inherit;
 }
 
-.menu {
-    text-align: center;
-}
-
 .menu::-webkit-scrollbar {
     display: none;
 }
@@ -286,6 +316,7 @@ ul li {
   will-change: transform;
   z-index: 9999 !important;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .menu-toggle {
