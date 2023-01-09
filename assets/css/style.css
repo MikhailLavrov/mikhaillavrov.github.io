@@ -635,6 +635,19 @@ section.my-work .section-heading {
     margin-bottom: 30px;
 }
 
+.in-process.isotope-item::after {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    content: "В работе";
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    width: auto;
+    height: auto;
+    background-color: #a43f49;
+}
+
 .isotope-item img {
     top: 0;
     left: 0;
